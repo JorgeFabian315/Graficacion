@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="Casa.Unidad_4.Esferas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Casa.Unidad_4"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="50">
+    <Ellipse Width="40" Height="40">
+        <Ellipse.Fill>
+            <SolidColorBrush Color="Green" x:Name="color"/>
+        </Ellipse.Fill>
+        <Ellipse.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <ColorAnimation 
+                                                Duration="0:0:1"
+                                                Storyboard.TargetName="color"
+                                                Storyboard.TargetProperty="Color"
+                                                To="Green" />
+                        <ColorAnimation BeginTime="0:0:3"
+                                                Duration="0:0:1"
+                                                Storyboard.TargetName="color"
+                                                Storyboard.TargetProperty="Color"
+                                                To="Red" />
+                        <ColorAnimation BeginTime="0:0:4"
+                                                Duration="0:0:1"
+                                                Storyboard.TargetName="color"
+                                                Storyboard.TargetProperty="Color"
+                                                To="Blue" />
+                        <ColorAnimation BeginTime="0:0:5"
+                                                Duration="0:0:1"
+                                                Storyboard.TargetName="color"
+                                                Storyboard.TargetProperty="Color"
+                                                To="Yellow" />
+                        <ColorAnimation BeginTime="0:0:6"
+                                                Duration="0:0:1"
+                                                Storyboard.TargetName="color"
+                                                Storyboard.TargetProperty="Color"
+                                                To="Orange" />
+                        <ColorAnimation BeginTime="0:0:7"
+                                                Duration="0:0:1"
+                                                Storyboard.TargetName="color"
+                                                Storyboard.TargetProperty="Color"
+                                                To="Red" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Ellipse.Triggers>
+    </Ellipse>
+</UserControl>

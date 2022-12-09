@@ -1,0 +1,34 @@
+﻿<Window x:Class="Casa.Unidad_2.Marcador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Casa.Unidad_2"
+        mc:Ignorable="d"
+        Title="Marcador"
+        Height="650"
+        Width="800">
+    <Canvas Margin="40,0,0,0">
+        <Path Stroke="Black"
+              Fill="#d50000"
+              StrokeThickness="2"
+              Data="M50,50 170,50 190,70 170,90
+              50,90 30,70 50,50 z M200,80
+              180,100 180,220 200,240 220,220
+              220,100 z M190,250 170,230 50,230
+              30,250 50,270 170,270 z M20,260 40,280 40,400
+              20,420 0,400 0,280 z M30,430 50,410 
+              170,410
+              190,430 170,450 50,450 z">
+            <Path.Effect>
+                <DropShadowEffect BlurRadius="20"/>
+            </Path.Effect>
+        </Path>
+        <Path Stroke="White" 
+             Fill="LightGray"
+             Data="M200,420 180,400 180,280
+              200,260 220,280 220,400 z M20,80 40,100
+              40,220 20,240 0,220 0,100 z"
+              />
+    </Canvas>
+</Window>

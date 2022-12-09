@@ -1,0 +1,32 @@
+﻿<Window x:Class="Casa.Pacman"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Casa"
+        mc:Ignorable="d"
+        Title="Pacman" Height="450" Width="800">
+    <Canvas>
+        <Path Stroke="Black"
+              StrokeThickness="3"
+              Fill="Yellow" 
+              Data="m400,100 A 110,110 1 1 0 400 200
+              L320,150 400,100 z"/>
+        <Ellipse Width="50" Height="50"
+                 Canvas.Left="290"
+                 Canvas.Top="65"
+                 StrokeThickness="2"
+                 Fill="White" Stroke="Black"/>
+        <Ellipse Width="40"
+                 Height="40"
+                 Canvas.Left="295"
+                 Canvas.Top="70"
+                 Fill="Black"
+                 Stroke="Black" />
+        <Ellipse Width="10"
+                 Height="10"
+                 Canvas.Left="295"
+                 Canvas.Top="80"
+                 Fill="White" />
+    </Canvas>
+</Window>

@@ -1,0 +1,48 @@
+﻿<Window x:Class="Casa.dibujos_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Casa"
+        mc:Ignorable="d"
+        Title="dibujos_1" Height="650" Width="1000">
+    <Canvas>
+        <Path Stroke="Black" StrokeThickness="3"
+              Data="M200,200 250,200 250,300 300,300 300,250 330,250
+              330,300 380,300  380,200 430,200 375,130 300,130 300,110 320,110 320,100 270,100
+              270,110 290,110 290,130 245,130 200,200 z" Fill="Black" />
+        <Image Source="f.png"
+               Margin="600,200"
+               Opacity="0"
+               Width="300" />
+        <Rectangle Fill="Red"
+                   Canvas.Top="460"
+                   Canvas.Left="640"
+                   Height="24"
+                   Width="225" />
+        <TextBlock Text="Informacion"
+                   Canvas.Top="350"
+                   FontSize="30"
+                   Foreground="Red"
+                   FontWeight="SemiBold"
+                   Canvas.Left="660" />
+        <TextBlock Text="Confidencial"
+                   Canvas.Top="380"
+                   FontSize="30"
+                   Foreground="Blue"
+                   FontWeight="SemiBold"
+                   Canvas.Left="660" />
+        <Path  Stroke="Black" StrokeThickness="3"
+               Data="M600,200 870,200 900,230 900,500 600,500
+               600,200 z M665,200 665,310 835,310
+               835,200 z M640,330 640,485 862,485
+               862,330 640,330" Fill="Black"/>
+        <Rectangle Width="40" Height="72"
+                   RadiusX="5"
+                   RadiusY="5"
+                   Canvas.Top="225"
+                   Canvas.Left="770"
+                   Fill="Gray"/>
+        
+    </Canvas>
+</Window>

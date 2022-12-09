@@ -1,0 +1,32 @@
+﻿<Window x:Class="Casa.Unidad_4.Animacion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Casa.Unidad_4"
+        mc:Ignorable="d"
+        Title="Animacion" Height="450" Width="800">
+    <Grid>
+        <Rectangle Width="200" Height="200" >
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Red" x:Name="color"/>
+            </Rectangle.Fill>
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="MouseLeftButtonDown">
+                    <BeginStoryboard>
+                        <Storyboard AutoReverse="True" RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                From="1"
+                                Duration="0:0:3"
+                                To="0"/>
+                            <ColorAnimation Storyboard.TargetProperty="Color"
+                                            Storyboard.TargetName="color"
+                                            To="Blue"
+                                             Duration="0:0:2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+        </Rectangle>
+    </Grid>
+</Window>
